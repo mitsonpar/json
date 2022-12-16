@@ -4,4 +4,22 @@
             Mit
         </title>
     </head>
+    <body>
+        <pre id="json"></pre>
+    </body>
 </html>
+<script>
+    var data = {
+  "data": {
+    "x": "1",
+    "y": "1",
+    "url": "http://url.com"
+  },
+  "event": "start",
+  "show": 1,
+  "id": 50
+}
+
+
+document.getElementById("json").textContent = JSON.stringify(data, undefined, 2);
+</script>
